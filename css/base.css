@@ -1,0 +1,577 @@
+/* ==========================================================================
+   SYSMIC — base.css · Design system del shell compartido
+   --------------------------------------------------------------------------
+   Tema oscuro tech, acento eléctrico cyan. Tipografía display editorial
+   (Space Grotesk) + texto (Inter). CSS artesanal: sin frameworks.
+   Este archivo SOLO contiene estilos de shell (nav, footer, tokens,
+   utilidades, grilla de auspiciadores). Los estilos por página viven en
+   home.css / ssl.css.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+/* ==========================================================================
+   1. Design tokens
+   ========================================================================== */
+
+:root {
+  /* Color */
+  --bg: #0b0d10;
+  --surface: #14181d;
+  --text: #e8eaed;
+  --muted: #9aa3ad;
+  --accent: #22d3ee;
+
+  /* Superficies derivadas (siempre vía token, nunca hex suelto) */
+  --surface-raised: rgba(232, 234, 237, 0.04);
+  --border-subtle: rgba(232, 234, 237, 0.08);
+  --nav-bg: rgba(11, 13, 16, 0.72);
+
+  /* Tipografía */
+  --font-display: 'Space Grotesk', 'Trebuchet MS', sans-serif;
+  --font-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+
+  /* Escala tipográfica fluida — display grande editorial */
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: clamp(1.05rem, 0.98rem + 0.35vw, 1.2rem);
+  --text-lg: clamp(1.25rem, 1.12rem + 0.65vw, 1.5rem);
+  --text-xl: clamp(1.6rem, 1.32rem + 1.4vw, 2.25rem);
+  --text-2xl: clamp(2rem, 1.5rem + 2.4vw, 3.25rem);
+  --text-display: clamp(2.75rem, 1.8rem + 5vw, 5.5rem);
+
+  --leading-tight: 1.05;
+  --leading-snug: 1.25;
+  --leading-body: 1.65;
+
+  /* Espaciado (base 4px) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+
+  /* Forma y movimiento */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 160ms;
+  --dur-slow: 420ms;
+
+  /* Layout */
+  --container-max: 1100px;
+  --nav-h: 64px;
+}
+
+/* ==========================================================================
+   2. Reset básico
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+  -webkit-font-smoothing: antialiased;
+  /* El header es fixed: el contenido arranca bajo la barra.
+     home.css puede anularlo para el efecto cover-to-fixed-header. */
+  padding-top: var(--nav-h);
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* ==========================================================================
+   3. Utilidades
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-5);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: var(--space-2);
+  left: var(--space-2);
+  z-index: 100;
+  padding: var(--space-2) var(--space-4);
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  transform: translateY(-200%);
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   4. Header / Nav — barra fija translúcida
+   ========================================================================== */
+
+.site-header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 50;
+  background: var(--nav-bg);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  backdrop-filter: blur(14px) saturate(140%);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  height: var(--nav-h);
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-5);
+}
+
+.site-nav__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+}
+
+.site-nav__brand img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Lista de navegación — horizontal en desktop */
+.site-nav__menu {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  list-style: none;
+  padding: 0;
+}
+
+.site-nav__menu a {
+  display: inline-block;
+  padding: var(--space-2) 0;
+  color: var(--muted);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color var(--dur-slow) var(--ease-out),
+    border-color var(--dur-slow) var(--ease-out);
+}
+
+.site-nav__menu a:hover {
+  color: var(--text);
+}
+
+/* Link activo — la página marca aria-current="page" */
+.site-nav__menu a[aria-current='page'] {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ==========================================================================
+   5. Botón hamburguesa — 3 barras solo-CSS
+   Oculto en desktop; visible solo con JS disponible en móvil
+   (progressive enhancement: sin JS el menú es lista estática).
+   ========================================================================== */
+
+.site-nav__toggle {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.site-nav__toggle-bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--text);
+  border-radius: 1px;
+  transition: transform var(--dur-slow) var(--ease-out),
+    opacity var(--dur-fast) var(--ease-out);
+}
+
+/* Barras → X cuando el menú está abierto */
+.nav-open .site-nav__toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-open .site-nav__toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-open .site-nav__toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ==========================================================================
+   6. Menú móvil (≤768px)
+   - SIN JS (html sin .js): header estático y menú como lista vertical
+     siempre visible → sitio 100% navegable sin JavaScript.
+   - CON JS (html.js): botón hamburguesa + panel desplegable colapsado
+     por defecto; body.nav-open lo despliega.
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  /* --- Fallback sin JS: todo visible, flujo normal --- */
+  html:not(.js) .site-header {
+    position: static;
+  }
+
+  html:not(.js) body {
+    padding-top: 0;
+  }
+
+  html:not(.js) .site-nav {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-block: var(--space-4);
+  }
+
+  html:not(.js) .site-nav__menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+    width: 100%;
+    margin-top: var(--space-4);
+  }
+
+  /* --- Con JS: hamburguesa + panel desplegable --- */
+  html.js .site-nav__toggle {
+    display: flex;
+  }
+
+  html.js .site-nav__menu {
+    position: absolute;
+    top: var(--nav-h);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: var(--space-3) var(--space-5) var(--space-5);
+    background: var(--nav-bg);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    backdrop-filter: blur(14px) saturate(140%);
+    border-bottom: 1px solid var(--border-subtle);
+    opacity: 0;
+    transform: translateY(-8px);
+    visibility: hidden;
+    transition: opacity var(--dur-slow) var(--ease-out),
+      transform var(--dur-slow) var(--ease-out),
+      visibility 0s linear var(--dur-slow);
+  }
+
+  html.js .nav-open .site-nav__menu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    transition: opacity var(--dur-slow) var(--ease-out),
+      transform var(--dur-slow) var(--ease-out);
+  }
+
+  html.js .site-nav__menu a {
+    display: block;
+    padding: var(--space-3) 0;
+    font-size: var(--text-md);
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  html.js .site-nav__menu li:last-child a {
+    border-bottom: none;
+  }
+}
+
+/* ==========================================================================
+   7. Footer
+   ========================================================================== */
+
+.site-footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border-subtle);
+  margin-top: var(--space-9);
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding-block: var(--space-6);
+}
+
+.site-footer__brand {
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+
+.site-footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  list-style: none;
+  padding: 0;
+}
+
+.site-footer__social a {
+  color: var(--muted);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color var(--dur-slow) var(--ease-out),
+    border-color var(--dur-slow) var(--ease-out);
+}
+
+.site-footer__social a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .site-footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ==========================================================================
+   8. Grilla de auspiciadores
+   ========================================================================== */
+
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--space-4);
+  list-style: none;
+  padding: 0;
+}
+
+.sponsors-grid > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  background: var(--surface-raised);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.sponsors-grid img {
+  max-height: 72px;
+  object-fit: contain;
+}
+
+.sponsors-grid figcaption,
+.sponsors-grid .sponsors-grid__name {
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+
+/* ==========================================================================
+   9. Accesibilidad — foco visible en TODO interactivo
+   ========================================================================== */
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* ==========================================================================
+   10. Movimiento reducido — anula transiciones/animaciones decorativas
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================================================
+   CANONICAL SHELL MARKUP
+   --------------------------------------------------------------------------
+   BLOQUE ÚNICO DE REFERENCIA: las 6 páginas (index.html, quienes-somos.html,
+   ssl.html, vsss.html, tdp.html, contacto.html) duplican este markup VERBATIM.
+
+   Reglas al pegar:
+   1. El skip-link va como PRIMER hijo de <body>.
+   2. <header id="site-header"> va inmediatamente después del skip-link.
+   3. Cambiar SOLO el atributo aria-current="page" al link de la página actual
+      (quitarlo de los demás links: solo UNO lo lleva).
+   4. <main id="main"> recibe el contenido de cada página (entre header y footer).
+   5. El <footer> cierra el documento antes del script.
+   6. Cargar el script SIEMPRE con defer antes de </body>:
+        <script src="js/nav.js" defer></script>
+   7. En index.html, css/home.css añade sus propios overrides (p. ej.
+      body { padding-top: 0 } para el cover); NO modificar este bloque.
+   ==========================================================================
+
+   <!-- COPIAR DESDE AQUÍ (dentro de <body>) -->
+
+   <a class="skip-link" href="#main">Saltar al contenido</a>
+
+   <header class="site-header" id="site-header">
+     <nav class="site-nav" aria-label="Navegación principal">
+       <a class="site-nav__brand" href="index.html">
+         <img src="assets/img/logo_sysmic.png" alt="" width="32" height="32">
+         <span>Sysmic</span>
+       </a>
+       <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+         <span class="site-nav__toggle-bar"></span>
+         <span class="site-nav__toggle-bar"></span>
+         <span class="site-nav__toggle-bar"></span>
+         <span class="visually-hidden">Abrir menú</span>
+       </button>
+       <ul class="site-nav__menu" id="nav-menu">
+         <li><a href="index.html" aria-current="page">Inicio</a></li>
+         <li><a href="quienes-somos.html">Quiénes somos</a></li>
+         <li><a href="ssl.html">SSL</a></li>
+         <li><a href="vsss.html">VSSS</a></li>
+         <li><a href="tdp.html">TDP</a></li>
+         <li><a href="contacto.html">Contacto</a></li>
+       </ul>
+     </nav>
+   </header>
+
+   <main id="main">
+     <!-- Contenido propio de cada página -->
+   </main>
+
+   <footer class="site-footer">
+     <div class="container site-footer__inner">
+       <p class="site-footer__brand">© Sysmic — Universidad Técnica Federico Santa María</p>
+       <ul class="site-footer__social">
+         <li><a href="https://www.instagram.com/sysmic.robotics/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+         <li><a href="https://www.facebook.com/sysmicusm/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+         <li><a href="https://gitlab.com/sysmic" target="_blank" rel="noopener noreferrer">GitLab</a></li>
+         <li><a href="mailto:sysmic.robotics@usm.cl">sysmic.robotics@usm.cl</a></li>
+       </ul>
+     </div>
+   </footer>
+
+   <script src="js/nav.js" defer></script>
+
+   <!-- COPIAR HASTA AQUÍ -->
+   ========================================================================== */
