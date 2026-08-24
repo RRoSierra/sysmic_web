@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Sysmic</title>
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header" id="site-header">
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a class="site-nav__brand" href="index.html">
+        <img src="assets/img/logo_sysmic.png" alt="" width="32" height="32">
+        <span>Sysmic</span>
+      </a>
+      <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="site-nav__toggle-bar"></span>
+        <span class="site-nav__toggle-bar"></span>
+        <span class="site-nav__toggle-bar"></span>
+        <span class="visually-hidden">Abrir menú</span>
+      </button>
+      <ul class="site-nav__menu" id="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="ssl.html">SSL</a></li>
+        <li><a href="vsss.html">VSSS</a></li>
+        <li><a href="tdp.html">TDP</a></li>
+        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container" style="padding-block: var(--space-8) var(--space-6); max-width: 600px;">
+
+    <section style="margin-bottom: var(--space-8);">
+      <h1 style="font-size: var(--text-2xl); margin-bottom: var(--space-4);">Contacto</h1>
+      <p style="font-size: var(--text-md); color: var(--muted); margin-bottom: var(--space-5);">
+        ¿Tienes preguntas, quieres colaborar o conocernos? Escríbenos.
+      </p>
+
+      <!-- Correo destacado -->
+      <p style="margin-bottom: var(--space-6);">
+        <a
+          href="mailto:sysmic.robotics@usm.cl"
+          style="
+            display: inline-block;
+            padding: var(--space-3) var(--space-5);
+            background: var(--accent);
+            color: var(--bg);
+            font-weight: 600;
+            font-size: var(--text-md);
+            text-decoration: none;
+            border-radius: var(--radius-md);
+          "
+        >sysmic.robotics@usm.cl</a>
+      </p>
+    </section>
+
+    <!-- Formulario -->
+    <section style="margin-bottom: var(--space-8);">
+      <h2 style="font-size: var(--text-xl); margin-bottom: var(--space-4);">Envíanos un mensaje</h2>
+      <!-- TODO: conectar a un servicio como Formspree — formulario SIN backend -->
+      <form id="contact-form" style="display: flex; flex-direction: column; gap: var(--space-4);">
+        <div>
+          <label for="name" style="display: block; font-size: var(--text-sm); color: var(--muted); margin-bottom: var(--space-1);">Nombre</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            style="
+              width: 100%;
+              padding: var(--space-3);
+              background: var(--surface);
+              border: 1px solid var(--border-subtle);
+              border-radius: var(--radius-sm);
+              color: var(--text);
+              font-size: var(--text-base);
+            "
+          >
+        </div>
+        <div>
+          <label for="email" style="display: block; font-size: var(--text-sm); color: var(--muted); margin-bottom: var(--space-1);">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            style="
+              width: 100%;
+              padding: var(--space-3);
+              background: var(--surface);
+              border: 1px solid var(--border-subtle);
+              border-radius: var(--radius-sm);
+              color: var(--text);
+              font-size: var(--text-base);
+            "
+          >
+        </div>
+        <div>
+          <label for="message" style="display: block; font-size: var(--text-sm); color: var(--muted); margin-bottom: var(--space-1);">Mensaje</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            style="
+              width: 100%;
+              padding: var(--space-3);
+              background: var(--surface);
+              border: 1px solid var(--border-subtle);
+              border-radius: var(--radius-sm);
+              color: var(--text);
+              font-size: var(--text-base);
+              resize: vertical;
+            "
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          style="
+            padding: var(--space-3) var(--space-5);
+            background: var(--accent);
+            color: var(--bg);
+            font-weight: 600;
+            font-size: var(--text-base);
+            border: none;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: opacity var(--dur-fast) var(--ease-out);
+          "
+        >Enviar mensaje</button>
+      </form>
+      <p id="form-message" style="display: none; margin-top: var(--space-3); color: var(--accent); font-size: var(--text-sm);"></p>
+    </section>
+
+    <!-- Redes sociales -->
+    <section>
+      <h2 style="font-size: var(--text-xl); margin-bottom: var(--space-4);">Síguenos</h2>
+      <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-3);">
+        <li>
+          <a href="https://www.instagram.com/sysmic.robotics/" target="_blank" rel="noopener noreferrer"
+             style="color: var(--muted); text-decoration: none; font-size: var(--text-md);">
+            Instagram: @sysmic.robotics
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/sysmicusm/" target="_blank" rel="noopener noreferrer"
+             style="color: var(--muted); text-decoration: none; font-size: var(--text-md);">
+            Facebook: sysmicusm
+          </a>
+        </li>
+        <li>
+          <a href="https://gitlab.com/sysmic" target="_blank" rel="noopener noreferrer"
+             style="color: var(--muted); text-decoration: none; font-size: var(--text-md);">
+            GitLab: sysmic
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__brand">© Sysmic — Universidad Técnica Federico Santa María</p>
+      <ul class="site-footer__social">
+        <li><a href="https://www.instagram.com/sysmic.robotics/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://www.facebook.com/sysmicusm/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        <li><a href="https://gitlab.com/sysmic" target="_blank" rel="noopener noreferrer">GitLab</a></li>
+        <li><a href="mailto:sysmic.robotics@usm.cl">sysmic.robotics@usm.cl</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Formulario sin backend: preventDefault + mensaje inline -->
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var msg = document.getElementById('form-message');
+      msg.textContent = 'Envío aún no habilitado. Gracias por tu interés — te contactaremos pronto.';
+      msg.style.display = 'block';
+    });
+  </script>
+
+  <script src="js/nav.js" defer></script>
+</body>
+</html>
