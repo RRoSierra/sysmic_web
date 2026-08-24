@@ -81,11 +81,29 @@ body.home {
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.5);
 }
 
+.home-cover__logo {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin-inline: auto;
+}
+
 .home-cover__subtitle {
   margin-top: var(--space-4);
   font-family: var(--font-body);
   font-size: var(--text-lg);
   color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.home-cover__usm {
+  height: 40px;
+  width: auto;
 }
 
 /* ---- Contenido editorial debajo del cover ---- */
