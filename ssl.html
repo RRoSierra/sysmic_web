@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSL — Sysmic Robotics</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/ssl.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/",
+      "three/examples/jsm/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body class="ssl">
+
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header" id="site-header">
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a class="site-nav__brand" href="index.html">
+        <img src="assets/img/logo_sysmic.png" alt="" width="32" height="32">
+        <span>Sysmic</span>
+      </a>
+      <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="site-nav__toggle-bar"></span>
+        <span class="site-nav__toggle-bar"></span>
+        <span class="site-nav__toggle-bar"></span>
+        <span class="visually-hidden">Abrir menú</span>
+      </button>
+      <ul class="site-nav__menu" id="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="ssl.html" aria-current="page">SSL</a></li>
+        <li><a href="vsss.html">VSSS</a></li>
+        <li><a href="tdp.html">TDP</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="ssl-content">
+    <section class="ssl-hero container">
+      <h1>Small Size League (SSL)</h1>
+      <p>Compiten robots autónomos de hasta 18 cm en canchas de 4.5 × 3 m. Todo el software corre onboard: percepción, planificación y control se ejecutan en tiempo real.</p>
+    </section>
+
+    <!-- 3D stage sticky -->
+    <div class="ssl-stage" aria-label="Modelo 3D interactivo del robot SSL desarmándose">
+      <canvas id="ssl-canvas"></canvas>
+
+      <div class="ssl-text-blocks">
+        <div class="ssl-text-block" data-step="0">
+          <div class="ssl-text-block__card">
+            <h2>Chasis</h2>
+            <p>Estructura central que integra toda la electrónica, la batería y los mecanismos de juego. Diseñado para ser ligero pero rígido, con espacio optimizado para componentes internos.</p>
+          </div>
+        </div>
+
+        <div class="ssl-text-block" data-step="1">
+          <div class="ssl-text-block__card">
+            <h2>Ruedas omnidireccionales</h2>
+            <p>Cuatro ruedas mecanum permiten movimiento en cualquier dirección sin girar el robot. Cada una tiene roldanas a 45° que generan vectores de fuerza resultantes.</p>
+          </div>
+        </div>
+
+        <div class="ssl-text-block" data-step="2">
+          <div class="ssl-text-block__card">
+            <h2>Dribbler</h2>
+            <p>Sistema de dribbling con rodillo activo que mantiene el balón controlado frente al robot. Motor de corriente continua con velocidad ajustable para diferentes posiciones de juego.</p>
+          </div>
+        </div>
+
+        <div class="ssl-text-block" data-step="3">
+          <div class="ssl-text-block__card">
+            <h2>Kicker / Solenoide</h2>
+            <p>Disparador electromagnético que expulsa el balón a alta velocidad. Coil solenoide con resorte de retorno, capaz de tiros de precisión y pases potentes.</p>
+          </div>
+        </div>
+
+        <div class="ssl-text-block" data-step="4">
+          <div class="ssl-text-block__card">
+            <h2>Electrónica</h2>
+            <p>PCB custom con microcontrolador, drivers de motor, receptor de radio y sensores. Batería LiPo recargable alimenta todo el sistema durante el partido.</p>
+          </div>
+        </div>
+
+        <div class="ssl-text-block" data-step="5">
+          <div class="ssl-text-block__card">
+            <h2>Patrón de visión</h2>
+            <p>Cada robot lleva un patrón circular único que la cámara overhead identifica para calcular posición y orientación en tiempo real a 60 fps.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__brand">© Sysmic — Universidad Técnica Federico Santa María</p>
+      <ul class="site-footer__social">
+        <li><a href="https://www.instagram.com/sysmic.robotics/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://www.facebook.com/sysmicusm/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        <li><a href="https://gitlab.com/sysmic" target="_blank" rel="noopener noreferrer">GitLab</a></li>
+        <li><a href="mailto:sysmic.robotics@usm.cl">sysmic.robotics@usm.cl</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" defer></script>
+  <script src="js/nav.js" defer></script>
+  <script type="module" src="js/ssl-explode.js"></script>
+</body>
+</html>

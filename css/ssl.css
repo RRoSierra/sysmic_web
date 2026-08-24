@@ -1,0 +1,141 @@
+/* ==========================================================================
+   ssl.css — SSL page: sticky 3D stage + text blocks
+   ========================================================================== */
+
+/* Hero intro */
+.ssl-hero {
+  padding: calc(var(--nav-h) + 3rem) 1rem 2rem;
+}
+
+.ssl-hero h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.ssl-hero p {
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  color: var(--muted);
+  max-width: 640px;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   3D Stage — sticky canvas
+   ========================================================================== */
+
+.ssl-stage {
+  position: relative;
+  min-height: 600vh;
+}
+
+.ssl-stage canvas,
+#ssl-canvas {
+  position: sticky;
+  top: var(--nav-h);
+  height: calc(100vh - var(--nav-h));
+  width: 100%;
+  display: block;
+  z-index: 1;
+}
+
+/* Text blocks scroll over the canvas */
+.ssl-text-blocks {
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+  margin-left: 50%;
+  padding-right: 1.5rem;
+}
+
+.ssl-text-block {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ssl-text-block__card {
+  background: rgba(11, 13, 16, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 420px;
+  pointer-events: auto;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.ssl-text-block.in-view .ssl-text-block__card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ssl-text-block__card h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.ssl-text-block__card p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Responsive — 375px
+   ========================================================================== */
+
+@media (max-width: 600px) {
+  .ssl-text-blocks {
+    margin-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .ssl-text-block__card {
+    max-width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Reduced motion — static fallback
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .ssl-text-block__card {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ==========================================================================
+   Loading indicator
+   ========================================================================== */
+
+.ssl-stage::after {
+  content: 'Cargando modelo 3D…';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--muted);
+  font-size: 0.9rem;
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.ssl-stage.loaded::after {
+  opacity: 0;
+}
