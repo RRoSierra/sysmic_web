@@ -1,0 +1,19 @@
+pages:
+  stage: deploy
+  image: alpine:latest
+  script:
+    - mkdir -p public
+    - cp index.html public/
+    - cp quienes-somos.html public/
+    - cp ssl.html public/
+    - cp vsss.html public/
+    - cp tdp.html public/
+    - cp contacto.html public/
+    - cp -r css public/
+    - cp -r js public/
+    - cp -r assets public/
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
