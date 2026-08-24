@@ -471,6 +471,9 @@ function setupWhenMeshesReady(root) {
 async function init() {
   try {
     robot = await loadURDF();
+    // URDF exports use ROS convention (Z-up); three.js is Y-up, so stand the
+    // robot upright: -90° about X maps model +Z onto world +Y.
+    robot.rotation.x = -Math.PI / 2;
     scene.add(robot);
     window.__robotLoaded = true;
 
