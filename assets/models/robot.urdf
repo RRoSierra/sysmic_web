@@ -1,0 +1,3165 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape document_id: 1dd03b38dd333b10ae86397a -->
+<robot name="ssl">
+  <!-- Link base -->
+  <link name="base">
+    <inertial>
+      <origin xyz="0.0314884 0.00660807 0.0590797" rpy="0 0 0"/>
+      <mass value="1.39033"/>
+      <inertia ixx="0.00485772" ixy="1.22019e-05" ixz="2.85031e-06" iyy="0.00535902" iyz="0.000131481" izz="0.00608725"/>
+    </inertial>
+    <!-- Part base_back -->
+    <visual>
+      <origin xyz="0.0313141 -0.00166617 0.0197929" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/base_back.stl"/>
+      </geometry>
+      <material name="base_back_material">
+        <color rgba="0.0627451 0.0156863 0.0156863 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0313141 -0.00166617 0.0197929" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/base_back.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_corona -->
+    <visual>
+      <origin xyz="0.0313141 -0.00216618 0.102493" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/base_corona.stl"/>
+      </geometry>
+      <material name="base_corona_material">
+        <color rgba="0.247059 0.247059 0.247059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0313141 -0.00216618 0.102493" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/base_corona.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_cap -->
+    <visual>
+      <origin xyz="0.0956683 0.00346409 0.0618373" rpy="1.5708 -2.9108e-08 0.174533"/>
+      <geometry>
+        <mesh filename="package://assets/base_cap.stl"/>
+      </geometry>
+      <material name="base_cap_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0956683 0.00346409 0.0618373" rpy="1.5708 -2.9108e-08 0.174533"/>
+      <geometry>
+        <mesh filename="package://assets/base_cap.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_dado -->
+    <visual>
+      <origin xyz="-0.0301737 -0.0376662 -0.0015071" rpy="4.4037e-08 3.5887e-08 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/base_dado.stl"/>
+      </geometry>
+      <material name="base_dado_material">
+        <color rgba="0.0627451 0.0156863 0.0156863 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0301737 -0.0376662 -0.0015071" rpy="4.4037e-08 3.5887e-08 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/base_dado.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part soportesolenoide -->
+    <visual>
+      <origin xyz="0.0313141 -0.0181662 0.0104929" rpy="1.5708 -5.3098e-08 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/soportesolenoide.stl"/>
+      </geometry>
+      <material name="soportesolenoide_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0313141 -0.0181662 0.0104929" rpy="1.5708 -5.3098e-08 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/soportesolenoide.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_cap_2 -->
+    <visual>
+      <origin xyz="-0.0330401 0.00346409 0.0618373" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/base_cap.stl"/>
+      </geometry>
+      <material name="base_cap_2_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0330401 0.00346409 0.0618373" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/base_cap.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_motor -->
+    <visual>
+      <origin xyz="0.0758001 0.0090689 -0.0045071" rpy="-2.7695e-08 4.96e-08 -2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/base_motor.stl"/>
+      </geometry>
+      <material name="base_motor_material">
+        <color rgba="0.796078 0.796078 0.796078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0758001 0.0090689 -0.0045071" rpy="-2.7695e-08 4.96e-08 -2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/base_motor.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_dado_2 -->
+    <visual>
+      <origin xyz="0.0928019 -0.0376662 -0.0015071" rpy="9.061e-09 -5.6081e-08 1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/base_dado.stl"/>
+      </geometry>
+      <material name="base_dado_2_material">
+        <color rgba="0.0627451 0.0156863 0.0156863 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0928019 -0.0376662 -0.0015071" rpy="9.061e-09 -5.6081e-08 1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/base_dado.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_lateral -->
+    <visual>
+      <origin xyz="0.0313141 -0.00216617 0.0104929" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/base_lateral.stl"/>
+      </geometry>
+      <material name="base_lateral_material">
+        <color rgba="0.0627451 0.0156863 0.0156863 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0313141 -0.00216617 0.0104929" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/base_lateral.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_motor_2 -->
+    <visual>
+      <origin xyz="0.0570867 -0.0401267 -0.0045071" rpy="-5.6081e-08 -9.061e-09 2.61799"/>
+      <geometry>
+        <mesh filename="package://assets/base_motor.stl"/>
+      </geometry>
+      <material name="base_motor_2_material">
+        <color rgba="0.796078 0.796078 0.796078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0570867 -0.0401267 -0.0045071" rpy="-5.6081e-08 -9.061e-09 2.61799"/>
+      <geometry>
+        <mesh filename="package://assets/base_motor.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_motor_3 -->
+    <visual>
+      <origin xyz="-0.014447 -0.00550565 -0.0045071" rpy="3.5887e-08 -4.4037e-08 0.523599"/>
+      <geometry>
+        <mesh filename="package://assets/base_motor.stl"/>
+      </geometry>
+      <material name="base_motor_3_material">
+        <color rgba="0.796078 0.796078 0.796078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.014447 -0.00550565 -0.0045071" rpy="3.5887e-08 -4.4037e-08 0.523599"/>
+      <geometry>
+        <mesh filename="package://assets/base_motor.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_dado_3 -->
+    <visual>
+      <origin xyz="-0.0230751 0.0434717 -0.0015071" rpy="-1.8661e-08 5.3656e-08 -2.26893"/>
+      <geometry>
+        <mesh filename="package://assets/base_dado.stl"/>
+      </geometry>
+      <material name="base_dado_3_material">
+        <color rgba="0.0627451 0.0156863 0.0156863 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0230751 0.0434717 -0.0015071" rpy="-1.8661e-08 5.3656e-08 -2.26893"/>
+      <geometry>
+        <mesh filename="package://assets/base_dado.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_front -->
+    <visual>
+      <origin xyz="0.0313141 -0.00216617 0.0104929" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/base_front.stl"/>
+      </geometry>
+      <material name="base_front_material">
+        <color rgba="0.0627451 0.0156863 0.0156863 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0313141 -0.00216617 0.0104929" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/base_front.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_link -->
+    <visual>
+      <origin xyz="0.0313141 -0.00216617 0.0074929" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/base_link.stl"/>
+      </geometry>
+      <material name="base_link_material">
+        <color rgba="0.247059 0.247059 0.247059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0313141 -0.00216617 0.0074929" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/base_link.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part board -->
+    <visual>
+      <origin xyz="0.0313141 -0.00216618 0.105291" rpy="5.3098e-08 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/board.stl"/>
+      </geometry>
+      <material name="board_material">
+        <color rgba="0.384314 0.0901961 0.423529 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0313141 -0.00216618 0.105291" rpy="5.3098e-08 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/board.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part battery -->
+    <visual>
+      <origin xyz="0.0315641 0.0462149 0.0587929" rpy="5.3098e-08 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/battery.stl"/>
+      </geometry>
+      <material name="battery_material">
+        <color rgba="0.984314 0.980392 0.960784 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0315641 0.0462149 0.0587929" rpy="5.3098e-08 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/battery.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_dado_4 -->
+    <visual>
+      <origin xyz="0.0857032 0.0434718 -0.0015071" rpy="-4.96e-08 -2.7695e-08 2.26893"/>
+      <geometry>
+        <mesh filename="package://assets/base_dado.stl"/>
+      </geometry>
+      <material name="base_dado_4_material">
+        <color rgba="0.0627451 0.0156863 0.0156863 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0857032 0.0434718 -0.0015071" rpy="-4.96e-08 -2.7695e-08 2.26893"/>
+      <geometry>
+        <mesh filename="package://assets/base_dado.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_motor_4 -->
+    <visual>
+      <origin xyz="0.0125248 0.039693 -0.0045071" rpy="5.3656e-08 1.8661e-08 -0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/base_motor.stl"/>
+      </geometry>
+      <material name="base_motor_4_material">
+        <color rgba="0.796078 0.796078 0.796078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0125248 0.039693 -0.0045071" rpy="5.3656e-08 1.8661e-08 -0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/base_motor.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_lateral_2 -->
+    <visual>
+      <origin xyz="0.0313141 -0.00216617 0.0104929" rpy="1.5708 2.9108e-08 -2.96706"/>
+      <geometry>
+        <mesh filename="package://assets/base_lateral.stl"/>
+      </geometry>
+      <material name="base_lateral_2_material">
+        <color rgba="0.0627451 0.0156863 0.0156863 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0313141 -0.00216617 0.0104929" rpy="1.5708 2.9108e-08 -2.96706"/>
+      <geometry>
+        <mesh filename="package://assets/base_lateral.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_2 -->
+    <visual>
+      <origin xyz="0.031314 0.107378 0.150291" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/part_2.stl"/>
+      </geometry>
+      <material name="part_2_material">
+        <color rgba="0.937255 0.658824 0.788235 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.031314 0.107378 0.150291" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/part_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_4 -->
+    <visual>
+      <origin xyz="0.0510863 0.0176059 0.150291" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/part_4.stl"/>
+      </geometry>
+      <material name="part_4_material">
+        <color rgba="0.435294 0.839216 0.243137 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0510863 0.0176059 0.150291" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/part_4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_case_body -->
+    <visual>
+      <origin xyz="0.031314 -0.00216633 0.148291" rpy="1.5708 -5.3098e-08 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/base_case_body.stl"/>
+      </geometry>
+      <material name="base_case_body_material">
+        <color rgba="0.972549 0.972549 0.972549 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.031314 -0.00216633 0.148291" rpy="1.5708 -5.3098e-08 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/base_case_body.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_case_top -->
+    <visual>
+      <origin xyz="0.031314 -0.00216633 0.150291" rpy="1.5708 2.0194e-08 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/base_case_top.stl"/>
+      </geometry>
+      <material name="base_case_top_material">
+        <color rgba="0.0627451 0.0156863 0.0156863 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.031314 -0.00216633 0.150291" rpy="1.5708 2.0194e-08 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/base_case_top.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_5 -->
+    <visual>
+      <origin xyz="0.031314 -0.0721663 0.150291" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/part_5.stl"/>
+      </geometry>
+      <material name="part_5_material">
+        <color rgba="0.937255 0.658824 0.788235 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.031314 -0.0721663 0.150291" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/part_5.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_3 -->
+    <visual>
+      <origin xyz="0.0115418 0.0176059 0.150291" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/part_3.stl"/>
+      </geometry>
+      <material name="part_3_material">
+        <color rgba="0.937255 0.658824 0.788235 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0115418 0.0176059 0.150291" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/part_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_6 -->
+    <visual>
+      <origin xyz="0.031314 -0.00216633 0.150291" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/part_6.stl"/>
+      </geometry>
+      <material name="part_6_material">
+        <color rgba="0.92549 0.862745 0.137255 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.031314 -0.00216633 0.150291" rpy="1.5708 -2.0194e-08 2.1484e-08"/>
+      <geometry>
+        <mesh filename="package://assets/part_6.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dribbler_base -->
+    <visual>
+      <origin xyz="0.0647361 -0.062052 0.0419929" rpy="1.5708 -5.3098e-08 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dribbler_base.stl"/>
+      </geometry>
+      <material name="dribbler_base_material">
+        <color rgba="0.0627451 0.0156863 0.0156863 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0647361 -0.062052 0.0419929" rpy="1.5708 -5.3098e-08 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dribbler_base.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dribbler_tapa -->
+    <visual>
+      <origin xyz="-0.00326387 -0.062052 0.0419929" rpy="1.5708 -5.3098e-08 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dribbler_tapa.stl"/>
+      </geometry>
+      <material name="dribbler_tapa_material">
+        <color rgba="0.0627451 0.0156863 0.0156863 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00326387 -0.062052 0.0419929" rpy="1.5708 -5.3098e-08 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dribbler_tapa.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dribbler_motor -->
+    <visual>
+      <origin xyz="0.0472363 -0.130697 0.0990157" rpy="1.1781 2.0194e-08 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dribbler_motor.stl"/>
+      </geometry>
+      <material name="dribbler_motor_material">
+        <color rgba="0.8 0.776471 0.713725 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0472363 -0.130697 0.0990157" rpy="1.1781 2.0194e-08 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dribbler_motor.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link wheel -->
+  <link name="wheel">
+    <inertial>
+      <origin xyz="4.32415e-06 -9.1258e-06 -0.00336033" rpy="0 0 0"/>
+      <mass value="0.0359127"/>
+      <inertia ixx="5.69731e-06" ixy="-2.346e-09" ixz="1.52e-09" iyy="5.69286e-06" iyz="-1.458e-09" izz="1.03566e-05"/>
+    </inertial>
+    <!-- Part r_acople_v1 -->
+    <visual>
+      <origin xyz="0 0 -0.005" rpy="1.5708 0 0.785398"/>
+      <geometry>
+        <mesh filename="package://assets/r_acople_v1.stl"/>
+      </geometry>
+      <material name="r_acople_v1_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.005" rpy="1.5708 0 0.785398"/>
+      <geometry>
+        <mesh filename="package://assets/r_acople_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part r_acople_tornillo_v1 -->
+    <visual>
+      <origin xyz="-0 -0 -0.015" rpy="1.5708 0 0.785398"/>
+      <geometry>
+        <mesh filename="package://assets/r_acople_tornillo_v1.stl"/>
+      </geometry>
+      <material name="r_acople_tornillo_v1_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 -0 -0.015" rpy="1.5708 0 0.785398"/>
+      <geometry>
+        <mesh filename="package://assets/r_acople_tornillo_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheel_top -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_top.stl"/>
+      </geometry>
+      <material name="wheel_top_material">
+        <color rgba="0.74902 0.74902 0.74902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_top.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheel_base -->
+    <visual>
+      <origin xyz="0 0 -0.008" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_base.stl"/>
+      </geometry>
+      <material name="wheel_base_material">
+        <color rgba="0.74902 0.74902 0.74902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.008" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_base.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheel_ring -->
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_ring.stl"/>
+      </geometry>
+      <material name="wheel_ring_material">
+        <color rgba="0.74902 0.74902 0.74902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_ring.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma -->
+    <visual>
+      <origin xyz="-0.0211709 -0.00311939 -0.00244056" rpy="-3.14159 0 1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0211709 -0.00311939 -0.00244056" rpy="-3.14159 0 1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely -->
+    <visual>
+      <origin xyz="-0.0212188 -0.00313219 -0.0025" rpy="3.14159 0 1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0212188 -0.00313219 -0.0025" rpy="3.14159 0 1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_2 -->
+    <visual>
+      <origin xyz="0.00674829 -0.0203076 -0.00244056" rpy="-3.14159 0 -2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_2_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00674829 -0.0203076 -0.00244056" rpy="-3.14159 0 -2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_2 -->
+    <visual>
+      <origin xyz="0.00676922 -0.0203526 -0.0025" rpy="3.14159 0 -2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_2_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00676922 -0.0203526 -0.0025" rpy="3.14159 0 -2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_3 -->
+    <visual>
+      <origin xyz="-0.0210584 0.00432676 -0.00355944" rpy="-0 -0 1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_3_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0210584 0.00432676 -0.00355944" rpy="-0 -0 1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_3 -->
+    <visual>
+      <origin xyz="-0.0210104 0.00431396 -0.0035" rpy="0 0 1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_3_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0210104 0.00431396 -0.0035" rpy="0 0 1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_4 -->
+    <visual>
+      <origin xyz="-0.0183086 0.0112682 -0.00355944" rpy="-0 0 1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_4_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0183086 0.0112682 -0.00355944" rpy="-0 0 1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_4 -->
+    <visual>
+      <origin xyz="-0.0182679 0.0112398 -0.0035" rpy="0 0 1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_4_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0182679 0.0112398 -0.0035" rpy="0 0 1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_5 -->
+    <visual>
+      <origin xyz="-0.0183229 -0.0110456 -0.00355944" rpy="-0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_5_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0183229 -0.0110456 -0.00355944" rpy="-0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_5 -->
+    <visual>
+      <origin xyz="-0.0183679 -0.0110666 -0.0035" rpy="0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_5_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0183679 -0.0110666 -0.0035" rpy="0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_6 -->
+    <visual>
+      <origin xyz="0.00791778 0.0199871 -0.00355944" rpy="-0 -0 -0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_6_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00791778 0.0199871 -0.00355944" rpy="-0 -0 -0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_6 -->
+    <visual>
+      <origin xyz="0.00789685 0.0199421 -0.0035" rpy="-0 0 -0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_6_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00789685 0.0199421 -0.0035" rpy="-0 0 -0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_7 -->
+    <visual>
+      <origin xyz="0.000604279 0.0214898 -0.00355944" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_7_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000604279 0.0214898 -0.00355944" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_7 -->
+    <visual>
+      <origin xyz="0.0006 0.0214403 -0.0035" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_7_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0006 0.0214403 -0.0035" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_8 -->
+    <visual>
+      <origin xyz="-0.00805545 -0.0203654 -0.00244056" rpy="-3.14159 0 2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_8_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00805545 -0.0203654 -0.00244056" rpy="-3.14159 0 2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_8 -->
+    <visual>
+      <origin xyz="-0.00806833 -0.0204133 -0.0025" rpy="-3.14159 0 2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_8_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00806833 -0.0204133 -0.0025" rpy="-3.14159 0 2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_9 -->
+    <visual>
+      <origin xyz="0.0189128 0.0102216 -0.00355944" rpy="-0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_9_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0189128 0.0102216 -0.00355944" rpy="-0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_9 -->
+    <visual>
+      <origin xyz="0.0188679 0.0102006 -0.0035" rpy="-0 0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_9_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0188679 0.0102006 -0.0035" rpy="-0 0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_10 -->
+    <visual>
+      <origin xyz="-0.0133505 0.0168506 -0.00355944" rpy="-0 0 0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_10_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0133505 0.0168506 -0.00355944" rpy="-0 0 0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_10 -->
+    <visual>
+      <origin xyz="-0.013322 0.0168099 -0.0035" rpy="-0 -0 0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_10_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.013322 0.0168099 -0.0035" rpy="-0 -0 0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_11 -->
+    <visual>
+      <origin xyz="-0.0142127 -0.015998 -0.00244056" rpy="-3.14159 0 2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_11_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0142127 -0.015998 -0.00244056" rpy="-3.14159 0 2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_11 -->
+    <visual>
+      <origin xyz="-0.0142412 -0.0160386 -0.0025" rpy="-3.14159 -0 2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_11_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0142412 -0.0160386 -0.0025" rpy="-3.14159 -0 2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_12 -->
+    <visual>
+      <origin xyz="0.0132869 -0.0167748 -0.00244056" rpy="-3.14159 -0 -2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_12_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0132869 -0.0167748 -0.00244056" rpy="-3.14159 -0 -2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_12 -->
+    <visual>
+      <origin xyz="0.013322 -0.0168099 -0.0025" rpy="-3.14159 0 -2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_12_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.013322 -0.0168099 -0.0025" rpy="-3.14159 0 -2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_13 -->
+    <visual>
+      <origin xyz="0.0212682 0.00313656 -0.00355944" rpy="-0 -0 -1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_13_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0212682 0.00313656 -0.00355944" rpy="-0 -0 -1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_13 -->
+    <visual>
+      <origin xyz="0.0212188 0.00313219 -0.0035" rpy="-0 -0 -1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_13_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0212188 0.00313219 -0.0035" rpy="-0 -0 -1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_14 -->
+    <visual>
+      <origin xyz="-0.000604279 -0.0213909 -0.00244056" rpy="-3.14159 0 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_14_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000604279 -0.0213909 -0.00244056" rpy="-3.14159 0 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_14 -->
+    <visual>
+      <origin xyz="-0.0006 -0.0214403 -0.0025" rpy="-3.14159 -0 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_14_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0006 -0.0214403 -0.0025" rpy="-3.14159 -0 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_15 -->
+    <visual>
+      <origin xyz="0.0142763 0.0160737 -0.00355944" rpy="-0 -0 -0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_15_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0142763 0.0160737 -0.00355944" rpy="-0 -0 -0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_15 -->
+    <visual>
+      <origin xyz="0.0142412 0.0160386 -0.0035" rpy="-0 0 -0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_15_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0142412 0.0160386 -0.0035" rpy="-0 0 -0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_16 -->
+    <visual>
+      <origin xyz="0.0182229 -0.0112188 -0.00244056" rpy="3.14159 -0 -2.0944"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_16_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0182229 -0.0112188 -0.00244056" rpy="3.14159 -0 -2.0944"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_16 -->
+    <visual>
+      <origin xyz="0.0182679 -0.0112398 -0.0025" rpy="-3.14159 -0 -2.0944"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_16_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0182679 -0.0112398 -0.0025" rpy="-3.14159 -0 -2.0944"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_17 -->
+    <visual>
+      <origin xyz="-0.0067821 0.0204005 -0.00355944" rpy="-0 0 0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_17_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0067821 0.0204005 -0.00355944" rpy="-0 0 0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_17 -->
+    <visual>
+      <origin xyz="-0.00676922 0.0203526 -0.0035" rpy="-0 -0 0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_17_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00676922 0.0203526 -0.0035" rpy="-0 -0 0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_18 -->
+    <visual>
+      <origin xyz="0.020961 -0.00430959 -0.00244056" rpy="-3.14159 -0 -1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_18_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.020961 -0.00430959 -0.00244056" rpy="-3.14159 -0 -1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_18 -->
+    <visual>
+      <origin xyz="0.0210104 -0.00431396 -0.0025" rpy="-3.14159 0 -1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_18_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0210104 -0.00431396 -0.0025" rpy="-3.14159 0 -1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from base to wheel -->
+  <joint name="wheellb_continuous" type="continuous">
+    <origin xyz="-0.0348722 0.0533707 0.0304929" rpy="-0.698132 -1.5708 0"/>
+    <parent link="base"/>
+    <child link="wheel"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link wheel_2 -->
+  <link name="wheel_2">
+    <inertial>
+      <origin xyz="4.32415e-06 -9.1258e-06 -0.00336033" rpy="0 0 0"/>
+      <mass value="0.0359127"/>
+      <inertia ixx="5.69731e-06" ixy="-2.346e-09" ixz="1.52e-09" iyy="5.69286e-06" iyz="-1.458e-09" izz="1.03566e-05"/>
+    </inertial>
+    <!-- Part r_acople_v1_2 -->
+    <visual>
+      <origin xyz="0 0 -0.005" rpy="1.5708 0 0.785398"/>
+      <geometry>
+        <mesh filename="package://assets/r_acople_v1.stl"/>
+      </geometry>
+      <material name="r_acople_v1_2_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.005" rpy="1.5708 0 0.785398"/>
+      <geometry>
+        <mesh filename="package://assets/r_acople_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part r_acople_tornillo_v1_2 -->
+    <visual>
+      <origin xyz="0 0 -0.015" rpy="1.5708 0 0.785398"/>
+      <geometry>
+        <mesh filename="package://assets/r_acople_tornillo_v1.stl"/>
+      </geometry>
+      <material name="r_acople_tornillo_v1_2_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.015" rpy="1.5708 0 0.785398"/>
+      <geometry>
+        <mesh filename="package://assets/r_acople_tornillo_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheel_top_2 -->
+    <visual>
+      <origin xyz="-0 0 0" rpy="-0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_top.stl"/>
+      </geometry>
+      <material name="wheel_top_2_material">
+        <color rgba="0.74902 0.74902 0.74902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0 0" rpy="-0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_top.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheel_base_2 -->
+    <visual>
+      <origin xyz="0 -0 -0.008" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_base.stl"/>
+      </geometry>
+      <material name="wheel_base_2_material">
+        <color rgba="0.74902 0.74902 0.74902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 -0.008" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_base.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheel_ring_2 -->
+    <visual>
+      <origin xyz="-0 0 0" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_ring.stl"/>
+      </geometry>
+      <material name="wheel_ring_2_material">
+        <color rgba="0.74902 0.74902 0.74902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0 0" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_ring.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_19 -->
+    <visual>
+      <origin xyz="-0.0211709 -0.00311939 -0.00244056" rpy="-3.14159 0 1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_19_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0211709 -0.00311939 -0.00244056" rpy="-3.14159 0 1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_19 -->
+    <visual>
+      <origin xyz="-0.0212188 -0.00313219 -0.0025" rpy="-3.14159 0 1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_19_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0212188 -0.00313219 -0.0025" rpy="-3.14159 0 1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_20 -->
+    <visual>
+      <origin xyz="0.00674829 -0.0203076 -0.00244056" rpy="3.14159 -0 -2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_20_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00674829 -0.0203076 -0.00244056" rpy="3.14159 -0 -2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_20 -->
+    <visual>
+      <origin xyz="0.00676922 -0.0203526 -0.0025" rpy="3.14159 -0 -2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_20_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00676922 -0.0203526 -0.0025" rpy="3.14159 -0 -2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_21 -->
+    <visual>
+      <origin xyz="-0.0210584 0.00432676 -0.00355944" rpy="-0 -0 1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_21_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0210584 0.00432676 -0.00355944" rpy="-0 -0 1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_21 -->
+    <visual>
+      <origin xyz="-0.0210104 0.00431396 -0.0035" rpy="-0 0 1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_21_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0210104 0.00431396 -0.0035" rpy="-0 0 1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_22 -->
+    <visual>
+      <origin xyz="-0.0183086 0.0112682 -0.00355944" rpy="0 -0 1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_22_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0183086 0.0112682 -0.00355944" rpy="0 -0 1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_22 -->
+    <visual>
+      <origin xyz="-0.0182679 0.0112398 -0.0035" rpy="0 0 1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_22_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0182679 0.0112398 -0.0035" rpy="0 0 1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_23 -->
+    <visual>
+      <origin xyz="-0.0183229 -0.0110456 -0.00355944" rpy="0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_23_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0183229 -0.0110456 -0.00355944" rpy="0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_23 -->
+    <visual>
+      <origin xyz="-0.0183679 -0.0110666 -0.0035" rpy="0 0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_23_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0183679 -0.0110666 -0.0035" rpy="0 0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_24 -->
+    <visual>
+      <origin xyz="0.00791778 0.0199871 -0.00355944" rpy="0 -0 -0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_24_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00791778 0.0199871 -0.00355944" rpy="0 -0 -0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_24 -->
+    <visual>
+      <origin xyz="0.00789685 0.0199421 -0.0035" rpy="0 -0 -0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_24_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00789685 0.0199421 -0.0035" rpy="0 -0 -0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_25 -->
+    <visual>
+      <origin xyz="0.000604279 0.0214898 -0.00355944" rpy="-0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_25_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000604279 0.0214898 -0.00355944" rpy="-0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_25 -->
+    <visual>
+      <origin xyz="0.0006 0.0214403 -0.0035" rpy="-0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_25_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0006 0.0214403 -0.0035" rpy="-0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_26 -->
+    <visual>
+      <origin xyz="-0.00805545 -0.0203654 -0.00244056" rpy="3.14159 0 2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_26_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00805545 -0.0203654 -0.00244056" rpy="3.14159 0 2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_26 -->
+    <visual>
+      <origin xyz="-0.00806833 -0.0204133 -0.0025" rpy="3.14159 0 2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_26_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00806833 -0.0204133 -0.0025" rpy="3.14159 0 2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_27 -->
+    <visual>
+      <origin xyz="0.0189128 0.0102216 -0.00355944" rpy="0 0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_27_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0189128 0.0102216 -0.00355944" rpy="0 0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_27 -->
+    <visual>
+      <origin xyz="0.0188679 0.0102006 -0.0035" rpy="-0 0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_27_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0188679 0.0102006 -0.0035" rpy="-0 0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_28 -->
+    <visual>
+      <origin xyz="-0.0133505 0.0168506 -0.00355944" rpy="-0 0 0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_28_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0133505 0.0168506 -0.00355944" rpy="-0 0 0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_28 -->
+    <visual>
+      <origin xyz="-0.013322 0.0168099 -0.0035" rpy="0 0 0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_28_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.013322 0.0168099 -0.0035" rpy="0 0 0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_29 -->
+    <visual>
+      <origin xyz="-0.0142127 -0.015998 -0.00244056" rpy="-3.14159 0 2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_29_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0142127 -0.015998 -0.00244056" rpy="-3.14159 0 2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_29 -->
+    <visual>
+      <origin xyz="-0.0142412 -0.0160386 -0.0025" rpy="3.14159 0 2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_29_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0142412 -0.0160386 -0.0025" rpy="3.14159 0 2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_30 -->
+    <visual>
+      <origin xyz="0.0132869 -0.0167748 -0.00244056" rpy="-3.14159 -0 -2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_30_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0132869 -0.0167748 -0.00244056" rpy="-3.14159 -0 -2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_30 -->
+    <visual>
+      <origin xyz="0.013322 -0.0168099 -0.0025" rpy="3.14159 -0 -2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_30_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.013322 -0.0168099 -0.0025" rpy="3.14159 -0 -2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_31 -->
+    <visual>
+      <origin xyz="0.0212682 0.00313656 -0.00355944" rpy="-0 -0 -1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_31_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0212682 0.00313656 -0.00355944" rpy="-0 -0 -1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_31 -->
+    <visual>
+      <origin xyz="0.0212188 0.00313219 -0.0035" rpy="-0 -0 -1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_31_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0212188 0.00313219 -0.0035" rpy="-0 -0 -1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_32 -->
+    <visual>
+      <origin xyz="-0.000604279 -0.0213909 -0.00244056" rpy="3.14159 -0 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_32_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000604279 -0.0213909 -0.00244056" rpy="3.14159 -0 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_32 -->
+    <visual>
+      <origin xyz="-0.0006 -0.0214403 -0.0025" rpy="3.14159 -0 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_32_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0006 -0.0214403 -0.0025" rpy="3.14159 -0 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_33 -->
+    <visual>
+      <origin xyz="0.0142763 0.0160737 -0.00355944" rpy="-0 -0 -0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_33_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0142763 0.0160737 -0.00355944" rpy="-0 -0 -0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_33 -->
+    <visual>
+      <origin xyz="0.0142412 0.0160386 -0.0035" rpy="-0 -0 -0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_33_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0142412 0.0160386 -0.0035" rpy="-0 -0 -0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_34 -->
+    <visual>
+      <origin xyz="0.0182229 -0.0112188 -0.00244056" rpy="3.14159 0 -2.0944"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_34_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0182229 -0.0112188 -0.00244056" rpy="3.14159 0 -2.0944"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_34 -->
+    <visual>
+      <origin xyz="0.0182679 -0.0112398 -0.0025" rpy="3.14159 0 -2.0944"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_34_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0182679 -0.0112398 -0.0025" rpy="3.14159 0 -2.0944"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_35 -->
+    <visual>
+      <origin xyz="-0.0067821 0.0204005 -0.00355944" rpy="0 0 0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_35_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0067821 0.0204005 -0.00355944" rpy="0 0 0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_35 -->
+    <visual>
+      <origin xyz="-0.00676922 0.0203526 -0.0035" rpy="0 0 0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_35_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00676922 0.0203526 -0.0035" rpy="0 0 0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_36 -->
+    <visual>
+      <origin xyz="0.020961 -0.00430959 -0.00244056" rpy="-3.14159 0 -1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_36_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.020961 -0.00430959 -0.00244056" rpy="-3.14159 0 -1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_36 -->
+    <visual>
+      <origin xyz="0.0210104 -0.00431396 -0.0025" rpy="3.14159 0 -1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_36_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0210104 -0.00431396 -0.0025" rpy="3.14159 0 -1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from base to wheel_2 -->
+  <joint name="wheelrb_continuous" type="continuous">
+    <origin xyz="0.0975003 0.0533707 0.0304929" rpy="-0.698132 1.5708 0"/>
+    <parent link="base"/>
+    <child link="wheel_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link wheel_3 -->
+  <link name="wheel_3">
+    <inertial>
+      <origin xyz="4.32415e-06 -9.1258e-06 -0.00336033" rpy="0 0 0"/>
+      <mass value="0.0359127"/>
+      <inertia ixx="5.69731e-06" ixy="-2.346e-09" ixz="1.52e-09" iyy="5.69286e-06" iyz="-1.458e-09" izz="1.03566e-05"/>
+    </inertial>
+    <!-- Part r_acople_v1_3 -->
+    <visual>
+      <origin xyz="0 0 -0.005" rpy="1.5708 -0 0.785398"/>
+      <geometry>
+        <mesh filename="package://assets/r_acople_v1.stl"/>
+      </geometry>
+      <material name="r_acople_v1_3_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.005" rpy="1.5708 -0 0.785398"/>
+      <geometry>
+        <mesh filename="package://assets/r_acople_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part r_acople_tornillo_v1_3 -->
+    <visual>
+      <origin xyz="0 0 -0.015" rpy="1.5708 -0 0.785398"/>
+      <geometry>
+        <mesh filename="package://assets/r_acople_tornillo_v1.stl"/>
+      </geometry>
+      <material name="r_acople_tornillo_v1_3_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.015" rpy="1.5708 -0 0.785398"/>
+      <geometry>
+        <mesh filename="package://assets/r_acople_tornillo_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheel_top_3 -->
+    <visual>
+      <origin xyz="-0 0 -0" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_top.stl"/>
+      </geometry>
+      <material name="wheel_top_3_material">
+        <color rgba="0.74902 0.74902 0.74902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0 -0" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_top.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheel_base_3 -->
+    <visual>
+      <origin xyz="-0 0 -0.008" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_base.stl"/>
+      </geometry>
+      <material name="wheel_base_3_material">
+        <color rgba="0.74902 0.74902 0.74902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0 -0.008" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_base.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheel_ring_3 -->
+    <visual>
+      <origin xyz="-0 0 -0" rpy="-1.5708 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_ring.stl"/>
+      </geometry>
+      <material name="wheel_ring_3_material">
+        <color rgba="0.74902 0.74902 0.74902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0 -0" rpy="-1.5708 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_ring.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_37 -->
+    <visual>
+      <origin xyz="-0.0211709 -0.00311939 -0.00244056" rpy="3.14159 0 1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_37_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0211709 -0.00311939 -0.00244056" rpy="3.14159 0 1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_37 -->
+    <visual>
+      <origin xyz="-0.0212188 -0.00313219 -0.0025" rpy="3.14159 0 1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_37_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0212188 -0.00313219 -0.0025" rpy="3.14159 0 1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_38 -->
+    <visual>
+      <origin xyz="0.00674829 -0.0203076 -0.00244056" rpy="3.14159 0 -2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_38_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00674829 -0.0203076 -0.00244056" rpy="3.14159 0 -2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_38 -->
+    <visual>
+      <origin xyz="0.00676922 -0.0203526 -0.0025" rpy="3.14159 0 -2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_38_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00676922 -0.0203526 -0.0025" rpy="3.14159 0 -2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_39 -->
+    <visual>
+      <origin xyz="-0.0210584 0.00432676 -0.00355944" rpy="0 0 1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_39_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0210584 0.00432676 -0.00355944" rpy="0 0 1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_39 -->
+    <visual>
+      <origin xyz="-0.0210104 0.00431396 -0.0035" rpy="0 0 1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_39_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0210104 0.00431396 -0.0035" rpy="0 0 1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_40 -->
+    <visual>
+      <origin xyz="-0.0183086 0.0112682 -0.00355944" rpy="-0 0 1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_40_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0183086 0.0112682 -0.00355944" rpy="-0 0 1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_40 -->
+    <visual>
+      <origin xyz="-0.0182679 0.0112398 -0.0035" rpy="-0 0 1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_40_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0182679 0.0112398 -0.0035" rpy="-0 0 1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_41 -->
+    <visual>
+      <origin xyz="-0.0183229 -0.0110456 -0.00355944" rpy="0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_41_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0183229 -0.0110456 -0.00355944" rpy="0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_41 -->
+    <visual>
+      <origin xyz="-0.0183679 -0.0110666 -0.0035" rpy="0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_41_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0183679 -0.0110666 -0.0035" rpy="0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_42 -->
+    <visual>
+      <origin xyz="0.00791778 0.0199871 -0.00355944" rpy="0 0 -0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_42_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00791778 0.0199871 -0.00355944" rpy="0 0 -0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_42 -->
+    <visual>
+      <origin xyz="0.00789685 0.0199421 -0.0035" rpy="0 -0 -0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_42_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00789685 0.0199421 -0.0035" rpy="0 -0 -0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_43 -->
+    <visual>
+      <origin xyz="0.000604279 0.0214898 -0.00355944" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_43_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000604279 0.0214898 -0.00355944" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_43 -->
+    <visual>
+      <origin xyz="0.0006 0.0214403 -0.0035" rpy="-0 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_43_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0006 0.0214403 -0.0035" rpy="-0 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_44 -->
+    <visual>
+      <origin xyz="-0.00805545 -0.0203654 -0.00244056" rpy="3.14159 0 2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_44_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00805545 -0.0203654 -0.00244056" rpy="3.14159 0 2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_44 -->
+    <visual>
+      <origin xyz="-0.00806833 -0.0204133 -0.0025" rpy="3.14159 0 2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_44_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00806833 -0.0204133 -0.0025" rpy="3.14159 0 2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_45 -->
+    <visual>
+      <origin xyz="0.0189128 0.0102216 -0.00355944" rpy="0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_45_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0189128 0.0102216 -0.00355944" rpy="0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_45 -->
+    <visual>
+      <origin xyz="0.0188679 0.0102006 -0.0035" rpy="-0 0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_45_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0188679 0.0102006 -0.0035" rpy="-0 0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_46 -->
+    <visual>
+      <origin xyz="-0.0133505 0.0168506 -0.00355944" rpy="-0 -0 0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_46_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0133505 0.0168506 -0.00355944" rpy="-0 -0 0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_46 -->
+    <visual>
+      <origin xyz="-0.013322 0.0168099 -0.0035" rpy="0 -0 0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_46_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.013322 0.0168099 -0.0035" rpy="0 -0 0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_47 -->
+    <visual>
+      <origin xyz="-0.0142127 -0.015998 -0.00244056" rpy="3.14159 -0 2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_47_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0142127 -0.015998 -0.00244056" rpy="3.14159 -0 2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_47 -->
+    <visual>
+      <origin xyz="-0.0142412 -0.0160386 -0.0025" rpy="3.14159 -0 2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_47_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0142412 -0.0160386 -0.0025" rpy="3.14159 -0 2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_48 -->
+    <visual>
+      <origin xyz="0.0132869 -0.0167748 -0.00244056" rpy="3.14159 0 -2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_48_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0132869 -0.0167748 -0.00244056" rpy="3.14159 0 -2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_48 -->
+    <visual>
+      <origin xyz="0.013322 -0.0168099 -0.0025" rpy="-3.14159 0 -2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_48_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.013322 -0.0168099 -0.0025" rpy="-3.14159 0 -2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_49 -->
+    <visual>
+      <origin xyz="0.0212682 0.00313656 -0.00355944" rpy="-0 -0 -1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_49_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0212682 0.00313656 -0.00355944" rpy="-0 -0 -1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_49 -->
+    <visual>
+      <origin xyz="0.0212188 0.00313219 -0.0035" rpy="-0 -0 -1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_49_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0212188 0.00313219 -0.0035" rpy="-0 -0 -1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_50 -->
+    <visual>
+      <origin xyz="-0.000604279 -0.0213909 -0.00244056" rpy="-3.14159 -0 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_50_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000604279 -0.0213909 -0.00244056" rpy="-3.14159 -0 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_50 -->
+    <visual>
+      <origin xyz="-0.0006 -0.0214403 -0.0025" rpy="-3.14159 -0 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_50_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0006 -0.0214403 -0.0025" rpy="-3.14159 -0 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_51 -->
+    <visual>
+      <origin xyz="0.0142763 0.0160737 -0.00355944" rpy="0 0 -0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_51_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0142763 0.0160737 -0.00355944" rpy="0 0 -0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_51 -->
+    <visual>
+      <origin xyz="0.0142412 0.0160386 -0.0035" rpy="-0 0 -0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_51_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0142412 0.0160386 -0.0035" rpy="-0 0 -0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_52 -->
+    <visual>
+      <origin xyz="0.0182229 -0.0112188 -0.00244056" rpy="-3.14159 -0 -2.0944"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_52_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0182229 -0.0112188 -0.00244056" rpy="-3.14159 -0 -2.0944"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_52 -->
+    <visual>
+      <origin xyz="0.0182679 -0.0112398 -0.0025" rpy="-3.14159 -0 -2.0944"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_52_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0182679 -0.0112398 -0.0025" rpy="-3.14159 -0 -2.0944"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_53 -->
+    <visual>
+      <origin xyz="-0.0067821 0.0204005 -0.00355944" rpy="-0 -0 0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_53_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0067821 0.0204005 -0.00355944" rpy="-0 -0 0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_53 -->
+    <visual>
+      <origin xyz="-0.00676922 0.0203526 -0.0035" rpy="0 -0 0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_53_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00676922 0.0203526 -0.0035" rpy="0 -0 0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_54 -->
+    <visual>
+      <origin xyz="0.020961 -0.00430959 -0.00244056" rpy="3.14159 -0 -1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_54_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.020961 -0.00430959 -0.00244056" rpy="3.14159 -0 -1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_54 -->
+    <visual>
+      <origin xyz="0.0210104 -0.00431396 -0.0025" rpy="-3.14159 -0 -1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_54_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0210104 -0.00431396 -0.0025" rpy="-3.14159 -0 -1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from base to wheel_3 -->
+  <joint name="wheelrf_continuous" type="continuous">
+    <origin xyz="0.106139 -0.0453662 0.0304929" rpy="2.61799 -1.5708 0"/>
+    <parent link="base"/>
+    <child link="wheel_3"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link wheel_4 -->
+  <link name="wheel_4">
+    <inertial>
+      <origin xyz="4.32415e-06 -9.1258e-06 -0.00336033" rpy="0 0 0"/>
+      <mass value="0.0359127"/>
+      <inertia ixx="5.69731e-06" ixy="-2.346e-09" ixz="1.52e-09" iyy="5.69286e-06" iyz="-1.458e-09" izz="1.03566e-05"/>
+    </inertial>
+    <!-- Part r_acople_v1_4 -->
+    <visual>
+      <origin xyz="0 0 -0.005" rpy="1.5708 -0 0.785398"/>
+      <geometry>
+        <mesh filename="package://assets/r_acople_v1.stl"/>
+      </geometry>
+      <material name="r_acople_v1_4_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.005" rpy="1.5708 -0 0.785398"/>
+      <geometry>
+        <mesh filename="package://assets/r_acople_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part r_acople_tornillo_v1_4 -->
+    <visual>
+      <origin xyz="0 0 -0.015" rpy="1.5708 -0 0.785398"/>
+      <geometry>
+        <mesh filename="package://assets/r_acople_tornillo_v1.stl"/>
+      </geometry>
+      <material name="r_acople_tornillo_v1_4_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.015" rpy="1.5708 -0 0.785398"/>
+      <geometry>
+        <mesh filename="package://assets/r_acople_tornillo_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheel_top_4 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_top.stl"/>
+      </geometry>
+      <material name="wheel_top_4_material">
+        <color rgba="0.74902 0.74902 0.74902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_top.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheel_base_4 -->
+    <visual>
+      <origin xyz="0 -0 -0.008" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_base.stl"/>
+      </geometry>
+      <material name="wheel_base_4_material">
+        <color rgba="0.74902 0.74902 0.74902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 -0.008" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_base.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheel_ring_4 -->
+    <visual>
+      <origin xyz="0 0 -0" rpy="-1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_ring.stl"/>
+      </geometry>
+      <material name="wheel_ring_4_material">
+        <color rgba="0.74902 0.74902 0.74902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0" rpy="-1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/wheel_ring.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_55 -->
+    <visual>
+      <origin xyz="-0.0211709 -0.00311939 -0.00244056" rpy="3.14159 0 1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_55_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0211709 -0.00311939 -0.00244056" rpy="3.14159 0 1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_55 -->
+    <visual>
+      <origin xyz="-0.0212188 -0.00313219 -0.0025" rpy="-3.14159 0 1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_55_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0212188 -0.00313219 -0.0025" rpy="-3.14159 0 1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_56 -->
+    <visual>
+      <origin xyz="0.00674829 -0.0203076 -0.00244056" rpy="3.14159 0 -2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_56_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00674829 -0.0203076 -0.00244056" rpy="3.14159 0 -2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_56 -->
+    <visual>
+      <origin xyz="0.00676922 -0.0203526 -0.0025" rpy="3.14159 0 -2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_56_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00676922 -0.0203526 -0.0025" rpy="3.14159 0 -2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_57 -->
+    <visual>
+      <origin xyz="-0.0210584 0.00432676 -0.00355944" rpy="-0 -0 1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_57_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0210584 0.00432676 -0.00355944" rpy="-0 -0 1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_57 -->
+    <visual>
+      <origin xyz="-0.0210104 0.00431396 -0.0035" rpy="0 -0 1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_57_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0210104 0.00431396 -0.0035" rpy="0 -0 1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_58 -->
+    <visual>
+      <origin xyz="-0.0183086 0.0112682 -0.00355944" rpy="0 0 1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_58_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0183086 0.0112682 -0.00355944" rpy="0 0 1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_58 -->
+    <visual>
+      <origin xyz="-0.0182679 0.0112398 -0.0035" rpy="0 0 1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_58_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0182679 0.0112398 -0.0035" rpy="0 0 1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_59 -->
+    <visual>
+      <origin xyz="-0.0183229 -0.0110456 -0.00355944" rpy="-0 0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_59_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0183229 -0.0110456 -0.00355944" rpy="-0 0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_59 -->
+    <visual>
+      <origin xyz="-0.0183679 -0.0110666 -0.0035" rpy="-0 0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_59_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0183679 -0.0110666 -0.0035" rpy="-0 0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_60 -->
+    <visual>
+      <origin xyz="0.00791778 0.0199871 -0.00355944" rpy="0 -0 -0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_60_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00791778 0.0199871 -0.00355944" rpy="0 -0 -0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_60 -->
+    <visual>
+      <origin xyz="0.00789685 0.0199421 -0.0035" rpy="0 -0 -0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_60_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00789685 0.0199421 -0.0035" rpy="0 -0 -0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_61 -->
+    <visual>
+      <origin xyz="0.000604279 0.0214898 -0.00355944" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_61_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000604279 0.0214898 -0.00355944" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_61 -->
+    <visual>
+      <origin xyz="0.0006 0.0214403 -0.0035" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_61_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0006 0.0214403 -0.0035" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_62 -->
+    <visual>
+      <origin xyz="-0.00805545 -0.0203654 -0.00244056" rpy="3.14159 -0 2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_62_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00805545 -0.0203654 -0.00244056" rpy="3.14159 -0 2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_62 -->
+    <visual>
+      <origin xyz="-0.00806833 -0.0204133 -0.0025" rpy="-3.14159 -0 2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_62_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00806833 -0.0204133 -0.0025" rpy="-3.14159 -0 2.79253"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_63 -->
+    <visual>
+      <origin xyz="0.0189128 0.0102216 -0.00355944" rpy="0 0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_63_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0189128 0.0102216 -0.00355944" rpy="0 0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_63 -->
+    <visual>
+      <origin xyz="0.0188679 0.0102006 -0.0035" rpy="0 0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_63_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0188679 0.0102006 -0.0035" rpy="0 0 -1.0472"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_64 -->
+    <visual>
+      <origin xyz="-0.0133505 0.0168506 -0.00355944" rpy="0 -0 0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_64_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0133505 0.0168506 -0.00355944" rpy="0 -0 0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_64 -->
+    <visual>
+      <origin xyz="-0.013322 0.0168099 -0.0035" rpy="0 -0 0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_64_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.013322 0.0168099 -0.0035" rpy="0 -0 0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_65 -->
+    <visual>
+      <origin xyz="-0.0142127 -0.015998 -0.00244056" rpy="-3.14159 0 2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_65_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0142127 -0.015998 -0.00244056" rpy="-3.14159 0 2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_65 -->
+    <visual>
+      <origin xyz="-0.0142412 -0.0160386 -0.0025" rpy="-3.14159 -0 2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_65_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0142412 -0.0160386 -0.0025" rpy="-3.14159 -0 2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_66 -->
+    <visual>
+      <origin xyz="0.0132869 -0.0167748 -0.00244056" rpy="3.14159 0 -2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_66_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0132869 -0.0167748 -0.00244056" rpy="3.14159 0 -2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_66 -->
+    <visual>
+      <origin xyz="0.013322 -0.0168099 -0.0025" rpy="3.14159 0 -2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_66_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.013322 -0.0168099 -0.0025" rpy="3.14159 0 -2.44346"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_67 -->
+    <visual>
+      <origin xyz="0.0212682 0.00313656 -0.00355944" rpy="-0 0 -1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_67_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0212682 0.00313656 -0.00355944" rpy="-0 0 -1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_67 -->
+    <visual>
+      <origin xyz="0.0212188 0.00313219 -0.0035" rpy="-0 0 -1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_67_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0212188 0.00313219 -0.0035" rpy="-0 0 -1.39626"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_68 -->
+    <visual>
+      <origin xyz="-0.000604279 -0.0213909 -0.00244056" rpy="3.14159 0 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_68_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000604279 -0.0213909 -0.00244056" rpy="3.14159 0 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_68 -->
+    <visual>
+      <origin xyz="-0.0006 -0.0214403 -0.0025" rpy="3.14159 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_68_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0006 -0.0214403 -0.0025" rpy="3.14159 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_69 -->
+    <visual>
+      <origin xyz="0.0142763 0.0160737 -0.00355944" rpy="0 0 -0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_69_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0142763 0.0160737 -0.00355944" rpy="0 0 -0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_69 -->
+    <visual>
+      <origin xyz="0.0142412 0.0160386 -0.0035" rpy="0 0 -0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_69_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0142412 0.0160386 -0.0035" rpy="0 0 -0.698132"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_70 -->
+    <visual>
+      <origin xyz="0.0182229 -0.0112188 -0.00244056" rpy="-3.14159 0 -2.0944"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_70_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0182229 -0.0112188 -0.00244056" rpy="-3.14159 0 -2.0944"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_70 -->
+    <visual>
+      <origin xyz="0.0182679 -0.0112398 -0.0025" rpy="3.14159 0 -2.0944"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_70_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0182679 -0.0112398 -0.0025" rpy="3.14159 0 -2.0944"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_71 -->
+    <visual>
+      <origin xyz="-0.0067821 0.0204005 -0.00355944" rpy="-0 0 0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_71_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0067821 0.0204005 -0.00355944" rpy="-0 0 0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_71 -->
+    <visual>
+      <origin xyz="-0.00676922 0.0203526 -0.0035" rpy="-0 0 0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_71_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00676922 0.0203526 -0.0035" rpy="-0 0 0.349066"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part goma_72 -->
+    <visual>
+      <origin xyz="0.020961 -0.00430959 -0.00244056" rpy="3.14159 -0 -1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+      <material name="goma_72_material">
+        <color rgba="0.152941 0.152941 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.020961 -0.00430959 -0.00244056" rpy="3.14159 -0 -1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/goma.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wheely_72 -->
+    <visual>
+      <origin xyz="0.0210104 -0.00431396 -0.0025" rpy="-3.14159 0 -1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+      <material name="wheely_72_material">
+        <color rgba="0.607843 0.52549 0.364706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0210104 -0.00431396 -0.0025" rpy="-3.14159 0 -1.74533"/>
+      <geometry>
+        <mesh filename="package://assets/wheely.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from base to wheel_4 -->
+  <joint name="wheellf_continuous" type="continuous">
+    <origin xyz="-0.0435105 -0.0453662 0.0302818" rpy="0.523599 -1.5708 0"/>
+    <parent link="base"/>
+    <child link="wheel_4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+</robot>
