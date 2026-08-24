@@ -68,7 +68,7 @@ body.home {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: var(--space-5);
   text-align: left;
@@ -98,7 +98,7 @@ body.home {
 }
 
 .home-cover__subtitle {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
 }
@@ -115,10 +115,24 @@ body.home {
   opacity: 1;
 }
 
+/* Fallback oculto por defecto; los bloques @supports/reduced-motion lo muestran */
+.home-cover-static {
+  display: none;
+}
+
 /* ---- Contenido editorial debajo del cover ---- */
+/* El header fijo ocupa 100svh (nav + cover); el contenido arranca después
+   de la cover y emerge a medida que el header colapsa con el scroll. */
 
 .home-content {
+  margin-top: 100vh;
+  margin-top: 100svh;
   padding-block: var(--space-9) var(--space-8);
+}
+
+/* Sin JS el header es estático y fluye con el documento: sin offset */
+html:not(.js) .home-content {
+  margin-top: 0;
 }
 
 .home-content section {
@@ -234,7 +248,11 @@ body.home {
     padding-top: 0;
   }
 
-  /* Sin animación del header: la cover se convierte en sección estática */
+  .home-cover {
+    display: none;
+  }
+
+  /* La cover estática desborda hacia abajo desde el header fijo de --nav-h */
   .home-cover-static {
     display: block;
     width: 100%;
@@ -264,8 +282,8 @@ body.home {
     z-index: 2;
   }
 
-  body.home .home-content {
-    padding-top: 0;
+  .home-content {
+    margin-top: calc(var(--nav-h) + 100svh);
   }
 }
 
@@ -284,6 +302,10 @@ body.home {
     padding-top: 0;
   }
 
+  .home-cover {
+    display: none;
+  }
+
   .home-cover-static {
     display: block;
     width: 100%;
@@ -311,6 +333,10 @@ body.home {
     max-width: 1200px;
     margin: 0 auto;
     z-index: 2;
+  }
+
+  .home-content {
+    margin-top: calc(var(--nav-h) + 100svh);
   }
 
   .home-robot-img {
