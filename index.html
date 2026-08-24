@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sysmic — Robotics USM</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body class="home">
+
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header" id="site-header">
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a class="site-nav__brand" href="index.html">
+        <img src="assets/img/logo_sysmic.png" alt="" width="32" height="32">
+        <span>Sysmic</span>
+      </a>
+      <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="site-nav__toggle-bar"></span>
+        <span class="site-nav__toggle-bar"></span>
+        <span class="site-nav__toggle-bar"></span>
+        <span class="visually-hidden">Abrir menú</span>
+      </button>
+      <ul class="site-nav__menu" id="nav-menu">
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="ssl.html">SSL</a></li>
+        <li><a href="vsss.html">VSSS</a></li>
+        <li><a href="tdp.html">TDP</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Cover: solo visible cuando el header es full-height (scroll-driven) -->
+    <div class="home-cover">
+      <div class="home-cover__bg" aria-hidden="true"></div>
+      <div class="home-cover__overlay" aria-hidden="true"></div>
+      <div class="home-cover__content">
+        <h1 class="home-cover__title">Sysmic</h1>
+        <p class="home-cover__subtitle">Robotics — Universidad Técnica Federico Santa María</p>
+      </div>
+    </div>
+
+    <!-- Fallback: cover estático si no hay scroll-driven animations -->
+    <div class="home-cover-static" aria-hidden="true" style="display:none">
+      <div class="home-cover__content">
+        <h1 class="home-cover__title">Sysmic</h1>
+        <p class="home-cover__subtitle">Robotics — Universidad Técnica Federico Santa María</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="home-content">
+    <!-- Sección 1: Qué es Sysmic + RoboCup -->
+    <section class="container">
+      <h2>¿Qué es Sysmic?</h2>
+      <p>
+        Somos el equipo de robótica de la Universidad Técnica Federico Santa María,
+        compitiendo en la liga RoboCup Small Size League (SSL).
+        Nuestro objetivo es desarrollar robots autónomos capaces de jugar fútbol
+        contra otros equipos de todo el mundo.
+      </p>
+      <p>
+        <a href="quienes-somos.html">Conoce más sobre nosotros →</a>
+      </p>
+    </section>
+
+    <!-- Sección 2: Imagen robot-ssl con reveal -->
+    <section class="container">
+      <img
+        src="assets/img/robot-ssl.jpg"
+        alt="Robot SSL de Sysmic en competencia"
+        class="home-robot-img"
+        width="1200"
+        height="675"
+        loading="lazy"
+      >
+    </section>
+
+    <!-- Sección 3: Auspiciadores -->
+    <section class="container home-sponsors">
+      <h2>Auspiciadores</h2>
+      <ul class="sponsors-grid">
+        <li>
+          <figure>
+            <img src="assets/img/colaborador-caleuche.png" alt="Caleuche" loading="lazy">
+            <figcaption class="sponsors-grid__name">Caleuche</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="assets/img/colaborador-logo-di.png" alt="DI" loading="lazy">
+            <figcaption class="sponsors-grid__name">DI</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="assets/img/colaborador-logo-ire.png" alt="IRE" loading="lazy">
+            <figcaption class="sponsors-grid__name">IRE</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="assets/img/colaborador-logo-usm-electronica.jpg" alt="Electrónica USM" loading="lazy">
+            <figcaption class="sponsors-grid__name">Electrónica USM</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="assets/img/colaborador-utfsm.jpg" alt="UTFSM" loading="lazy">
+            <figcaption class="sponsors-grid__name">UTFSM</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CTA: Redes sociales -->
+    <section class="container home-cta">
+      <h2>Síguenos</h2>
+      <ul class="home-cta__links">
+        <li><a href="https://www.instagram.com/sysmic.robotics/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://www.facebook.com/sysmicusm/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        <li><a href="https://gitlab.com/sysmic" target="_blank" rel="noopener noreferrer">GitLab</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__brand">© Sysmic — Universidad Técnica Federico Santa María</p>
+      <ul class="site-footer__social">
+        <li><a href="https://www.instagram.com/sysmic.robotics/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://www.facebook.com/sysmicusm/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        <li><a href="https://gitlab.com/sysmic" target="_blank" rel="noopener noreferrer">GitLab</a></li>
+        <li><a href="mailto:sysmic.robotics@usm.cl">sysmic.robotics@usm.cl</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Fallback JS: si no hay scroll-driven animations, mostrar cover estático -->
+  <script>
+    if (!CSS.supports('animation-timeline', 'scroll()')) {
+      document.querySelector('.home-cover-static').style.display = '';
+      document.querySelector('.home-cover').style.display = 'none';
+      document.body.style.paddingTop = '0';
+    }
+  </script>
+
+  <!-- IntersectionObserver: reveal de la imagen robot-ssl -->
+  <script>
+    (function () {
+      var img = document.querySelector('.home-robot-img');
+      if (!img) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        img.classList.add('revealed');
+        return;
+      }
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            img.classList.add('revealed');
+            observer.disconnect();
+          }
+        });
+      }, { threshold: 0.15 });
+      observer.observe(img);
+    })();
+  </script>
+
+  <script src="js/nav.js" defer></script>
+</body>
+</html>
