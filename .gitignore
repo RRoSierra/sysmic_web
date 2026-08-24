@@ -1,0 +1,18 @@
+# Agent working artifacts (plans, QA evidence, notepads)
+.omo/
+
+# Original source folders already duplicated into assets/
+# (img/ -> assets/img, docs/ -> assets/papers, ssl_urdf/ -> assets/models)
+/img/
+/docs/
+/ssl_urdf/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.code-workspace
+*.swp
+
+# Python caches from local QA scripts
+__pycache__/
+*.pyc
