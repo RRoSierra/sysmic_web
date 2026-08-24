@@ -46,7 +46,9 @@ const EXPLODE_GROUPS = {
     prefixes: ['wheel_base', 'wheel_ring', 'wheel_top', 'wheely',
                'goma', 'part_2', 'part_3', 'part_4', 'part_5', 'part_6',
                'r_acople'],
-    offset: new THREE.Vector3(0, -2, 0),
+    // `radial`: per-mesh horizontal push (same author-units as offsets) —
+    // the four wheels sit at different corners, so they cannot share one offset.
+    radial: 2,
     label: 'Ruedas'
   }
 };
@@ -210,16 +212,33 @@ function createExplodeTimeline(meshes) {
       (m) => meshGroupMap.get(m.uuid) === groupName
     );
 
-    if (groupMeshes.length === 0 || group.offset.length() < 0.01) return;
+    if (groupMeshes.length === 0) return;
+    if (!group.radial && group.offset.length() < 0.01) return;
+
+    // Offsets were authored for a model of radius ≈1.5; rescale to the real one
+    const scale = modelRadius / 1.5;
 
     groupMeshes.forEach((mesh) => {
       const orig = originalPositions.get(mesh.uuid);
-      // Offsets were authored for a model of radius ≈1.5; rescale to the real one
-      const scaled = group.offset.clone().multiplyScalar(modelRadius / 1.5);
+      let worldOffset;
+      if (group.radial) {
+        // Direction = mesh XZ position minus the framed robot center, so each
+        // wheel flies out along its own mounting angle; Y stays 0 (height kept).
+        const wp = mesh.getWorldPosition(new THREE.Vector3());
+        const dx = wp.x - controls.target.x;
+        const dz = wp.z - controls.target.z;
+        const horiz = Math.hypot(dx, dz);
+        worldOffset = horiz > 1e-6
+          ? new THREE.Vector3((dx / horiz) * group.radial * scale, 0,
+                              (dz / horiz) * group.radial * scale)
+          : new THREE.Vector3(group.radial * scale, 0, 0);
+      } else {
+        worldOffset = group.offset.clone().multiplyScalar(scale);
+      }
       // Convert the world-space offset into the mesh's local space
       const parentQuat = new THREE.Quaternion();
       mesh.parent.getWorldQuaternion(parentQuat);
-      const target = orig.clone().add(scaled.applyQuaternion(parentQuat.invert()));
+      const target = orig.clone().add(worldOffset.applyQuaternion(parentQuat.invert()));
 
       tl.add({
         targets: mesh.position,
