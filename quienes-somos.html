@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiénes somos — Sysmic</title>
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header" id="site-header">
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a class="site-nav__brand" href="index.html">
+        <img src="assets/img/logo_sysmic.png" alt="" width="32" height="32">
+        <span>Sysmic</span>
+      </a>
+      <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="site-nav__toggle-bar"></span>
+        <span class="site-nav__toggle-bar"></span>
+        <span class="site-nav__toggle-bar"></span>
+        <span class="visually-hidden">Abrir menú</span>
+      </button>
+      <ul class="site-nav__menu" id="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienes-somos.html" aria-current="page">Quiénes somos</a></li>
+        <li><a href="ssl.html">SSL</a></li>
+        <li><a href="vsss.html">VSSS</a></li>
+        <li><a href="tdp.html">TDP</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container" style="padding-block: var(--space-8) var(--space-6);">
+
+    <!-- Hero -->
+    <section style="margin-bottom: var(--space-8);">
+      <h1 style="font-size: var(--text-2xl); margin-bottom: var(--space-4);">Quiénes somos</h1>
+      <p style="font-size: var(--text-md); color: var(--muted); max-width: 700px;">
+        Somos Sysmic, el equipo de robótica de la Universidad Técnica Federico Santa María
+        que compite en la liga RoboCup Small Size League (SSL).
+      </p>
+    </section>
+
+    <!-- Imagen RoboCup -->
+    <section style="margin-bottom: var(--space-8);">
+      <img
+        src="assets/img/robocup.jpeg"
+        alt="Equipo Sysmic en competencia RoboCup"
+        style="width: 100%; border-radius: var(--radius-lg);"
+        loading="lazy"
+      >
+    </section>
+
+    <!-- Historia -->
+    <section style="margin-bottom: var(--space-8);">
+      <h2 style="font-size: var(--text-xl); margin-bottom: var(--space-4);">Historia</h2>
+      <!-- TODO: contenido real del historial del equipo -->
+      <p style="color: var(--muted); font-size: var(--text-md);">
+        <em>Historia del equipo en construcción. Próximamente contaremos nuestra trayectoria
+        en las competencias internacionales de RoboCup.</em>
+      </p>
+    </section>
+
+    <!-- Equipo -->
+    <section style="margin-bottom: var(--space-8);">
+      <h2 style="font-size: var(--text-xl); margin-bottom: var(--space-4);">El equipo</h2>
+      <img
+        src="assets/img/robot-radio.jpg"
+        alt="Robot de Sysmic con radio"
+        style="width: 100%; border-radius: var(--radius-lg); margin-bottom: var(--space-4);"
+        loading="lazy"
+      >
+      <!-- TODO: contenido real del equipo -->
+      <p style="color: var(--muted); font-size: var(--text-md);">
+        <em>Información del equipo en construcción. Conoce a los miembros que hacen posible
+        nuestra participación en RoboCup.</em>
+      </p>
+    </section>
+
+    <!-- Auspiciadores -->
+    <section style="margin-bottom: var(--space-8);">
+      <h2 style="font-size: var(--text-xl); margin-bottom: var(--space-5); text-align: center;">Auspiciadores</h2>
+      <ul class="sponsors-grid">
+        <li>
+          <figure>
+            <img src="assets/img/colaborador-caleuche.png" alt="Caleuche" loading="lazy">
+            <figcaption class="sponsors-grid__name">Caleuche</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="assets/img/colaborador-logo-di.png" alt="DI" loading="lazy">
+            <figcaption class="sponsors-grid__name">DI</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="assets/img/colaborador-logo-ire.png" alt="IRE" loading="lazy">
+            <figcaption class="sponsors-grid__name">IRE</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="assets/img/colaborador-logo-usm-electronica.jpg" alt="Electrónica USM" loading="lazy">
+            <figcaption class="sponsors-grid__name">Electrónica USM</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="assets/img/colaborador-utfsm.jpg" alt="UTFSM" loading="lazy">
+            <figcaption class="sponsors-grid__name">UTFSM</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__brand">© Sysmic — Universidad Técnica Federico Santa María</p>
+      <ul class="site-footer__social">
+        <li><a href="https://www.instagram.com/sysmic.robotics/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://www.facebook.com/sysmicusm/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        <li><a href="https://gitlab.com/sysmic" target="_blank" rel="noopener noreferrer">GitLab</a></li>
+        <li><a href="mailto:sysmic.robotics@usm.cl">sysmic.robotics@usm.cl</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/nav.js" defer></script>
+</body>
+</html>
