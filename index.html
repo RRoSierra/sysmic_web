@@ -37,9 +37,6 @@
       <div class="home-cover__bg" aria-hidden="true"></div>
       <div class="home-cover__overlay" aria-hidden="true"></div>
       <div class="home-cover__content">
-        <p class="home-cover__subtitle">
-          <img src="assets/img/usm_horizontal.png" alt="Universidad Técnica Federico Santa María" class="home-cover__usm">
-        </p>
         <h1 class="home-cover__title">
           <img src="assets/img/logo_sysmic.png" alt="Logo Sysmic" class="home-cover__logo">
         </h1>
@@ -49,9 +46,6 @@
     <!-- Fallback: cover estático si no hay scroll-driven animations -->
     <div class="home-cover-static" aria-hidden="true">
       <div class="home-cover__content">
-        <p class="home-cover__subtitle">
-          <img src="assets/img/usm_horizontal.png" alt="Universidad Técnica Federico Santa María" class="home-cover__usm">
-        </p>
         <h1 class="home-cover__title">
           <img src="assets/img/logo_sysmic.png" alt="Logo Sysmic" class="home-cover__logo">
         </h1>
@@ -60,30 +54,30 @@
   </header>
 
   <main id="main" class="home-content">
-    <!-- Sección 1: Qué es Sysmic + RoboCup -->
+    <!-- Sección: Qué es Sysmic + robot SSL (side-by-side) -->
     <section class="container">
-      <h2>¿Qué es Sysmic?</h2>
-      <p>
-        Somos el equipo de robótica de la Universidad Técnica Federico Santa María,
-        compitiendo en la liga RoboCup Small Size League (SSL).
-        Nuestro objetivo es desarrollar robots autónomos capaces de jugar fútbol
-        contra otros equipos de todo el mundo.
-      </p>
-      <p>
-        <a href="quienes-somos.html">Conoce más sobre nosotros →</a>
-      </p>
-    </section>
-
-    <!-- Sección 2: Imagen robot-ssl con reveal -->
-    <section class="container">
-      <img
-        src="assets/img/robot-ssl.jpg"
-        alt="Robot SSL de Sysmic en competencia"
-        class="home-robot-img"
-        width="1200"
-        height="675"
-        loading="lazy"
-      >
+      <div class="sysmic-intro-grid">
+        <div class="sysmic-intro-grid__text">
+          <h2>¿Qué es Sysmic?</h2>
+          <p>
+            Somos el equipo de robótica de la Universidad Técnica Federico Santa María,
+            compitiendo en la liga RoboCup Small Size League (SSL).
+            Nuestro objetivo es desarrollar robots autónomos capaces de jugar fútbol
+            contra otros equipos de todo el mundo.
+          </p>
+          <p>
+            <a href="quienes-somos.html">Conoce más sobre nosotros →</a>
+          </p>
+        </div>
+        <img
+          src="assets/img/robot-ssl.jpg"
+          alt="Robot SSL de Sysmic en competencia"
+          class="home-robot-img"
+          width="1200"
+          height="675"
+          loading="lazy"
+        >
+      </div>
     </section>
 
     <!-- Sección 3: Auspiciadores -->

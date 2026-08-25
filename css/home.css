@@ -91,28 +91,10 @@ body.home {
 .home-cover__logo {
   display: block;
   width: 100%;
-  max-width: 380px;
+  max-width: 560px;
   height: auto;
   margin-left: 0;
   filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.6));
-}
-
-.home-cover__subtitle {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.home-cover__usm {
-  height: 200px;
-  width: auto;
-  filter: brightness(1) invert(0);
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
-}
-
-.home-cover__usm:hover {
-  opacity: 1;
 }
 
 /* Fallback oculto por defecto; los bloques @supports/reduced-motion lo muestran */
@@ -127,7 +109,12 @@ body.home {
 .home-content {
   margin-top: 100vh;
   margin-top: 100svh;
-  padding-block: var(--space-9) var(--space-8);
+  /* Fondo sólido + z-index: el contenido pasa por encima de la cover fija
+     al hacer scroll, sin que la foto se asome por debajo */
+  position: relative;
+  z-index: 10;
+  background-color: var(--bg);
+  padding-block: var(--space-6) var(--space-8);
 }
 
 /* Sin JS el header es estático y fluye con el documento: sin offset */
@@ -137,6 +124,10 @@ html:not(.js) .home-content {
 
 .home-content section {
   margin-block: var(--space-9);
+}
+
+.home-content section:first-child {
+  margin-block-start: 0;
 }
 
 .home-content h2 {
@@ -163,11 +154,26 @@ html:not(.js) .home-content {
   color: var(--text);
 }
 
-/* Imagen robot-ssl a ancho completo con reveal sutil */
+/* ---- Sección intro side-by-side: texto + robot SSL ---- */
+
+.sysmic-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .sysmic-intro-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Imagen robot-ssl a ancho de columna con reveal sutil */
 .home-robot-img {
   width: 100%;
   border-radius: var(--radius-lg);
-  margin-block: var(--space-7);
+  margin-block: 0;
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
