@@ -16,3 +16,7 @@ Thumbs.db
 # Python caches from local QA scripts
 __pycache__/
 *.pyc
+
+# MemPalace per-project files (issue #185)
+mempalace.yaml
+entities.json
